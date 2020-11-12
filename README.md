@@ -1,2 +1,2 @@
-Si Aki is software for pharmacy
+This is software for shoes store
 This is website version
