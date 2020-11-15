@@ -3,6 +3,32 @@ include "../../controller/koneksi.php";
 $query = "SELECT * from tb_barang ORDER BY id_barang ASC";
 $ambil_data = mysqli_query($koneksi, $query);
 ?>
+
+<?php
+			if (isset($_GET['pesan'])) {
+				if ($_GET['pesan'] == "gagal") {
+					echo "<div class='notification'>.
+						  <button class='delete'></button>.
+						  Semua harus diisi <hr>.
+						</div>
+					";
+				} else if ($_GET['pesan'] == "ubah") {
+					echo "<div class='notification'>
+						  <button class='delete'></button>
+						  Data telah diubah <hr>
+						</div>";
+				} else if ($_GET['pesan'] == "ditambahkan") {
+					echo "div class='notification'>
+						  <button class='delete'></button>
+					Data berhasil ditambahkan <hr>
+					</div>";
+							
+				}
+			}else{
+				echo "";
+			}
+			?>
+
 <br>
 <h3>Data Barang</h3>
 <div class="col-8">

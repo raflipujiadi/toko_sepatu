@@ -1,8 +1,8 @@
 <?php
 include    '../../controller/koneksi.php';
-$id             = isset($_POST['id_transaksi']) ? $_POST['id_transaksi'] : '';
+$id             = isset($_POST['id_transaksi']) ? $_POST['id_transaksi'] : NULL;
 $nama_konsumen             = isset($_POST['nama_konsumen']) ? $_POST['nama_konsumen'] : '';
-$kd_sepatu             = isset($_POST['kd_spt']) ? $_POST['kd_spt'] : '';
+$kode_spt             = isset($_POST['kode_spt']) ? $_POST['kode_spt'] : '';
 $nama_barang         = isset($_POST['nama_barang']) ? $_POST['nama_barang'] : '';
 $jumlah         = isset($_POST['jumlah']) ? $_POST['jumlah'] : '';
 
