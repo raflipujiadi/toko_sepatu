@@ -9,7 +9,7 @@ $ambil_data = mysqli_query($koneksi, $query);
 
 <head>
 	<?php
-	include 'view/header.php';
+	include 'view/master.php';
 	?>
 </head>
 
@@ -25,21 +25,18 @@ $ambil_data = mysqli_query($koneksi, $query);
 </body>
 
 	<!-- Footer -->
-	<footer id="footer">
-		<?php
-			include 'view/footer.php'
-		?>
+	<footer id="about">
+		
 	</footer>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$(".grid-style").load("model/ambildatabarang.php");
-			$(".bannerz").load("model/slider.php");
+			$("#home-content").load("model/ambildatalayanan.php");
+			$("#home-content").load("model/pg_pelayanan.php");
+			$("#container").load("model/pg_testimonial.php");
+			$("#container").load("model/pg_about.php");
+			$("#container").load("model/home.php");
 		});
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
 </html>

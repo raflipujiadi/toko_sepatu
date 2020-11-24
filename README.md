@@ -1,2 +1,2 @@
-This is software for shoes store
+This is software for shipmen 
 This is website version
